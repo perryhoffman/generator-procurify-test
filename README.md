@@ -8,7 +8,7 @@ First, install [Yeoman](http://yeoman.io) and generator-procurify-test using [np
 npm install -g yo
 ```
 
-Navigate to the Procurify project directory and install this generator:
+Navigate to the Procurify project directory and install this generator. It should already be included in the package.json:
 
 ```bash
 npm install
