@@ -20,6 +20,8 @@ Then generate your tests in the Procurify project directory:
 yo procurify-test
 ```
 
+Follow the steps in terminal. Make sure the module name entered is the exact same as the folder/file names.
+
 ## License
 
  © [Perry Hoffman]()
