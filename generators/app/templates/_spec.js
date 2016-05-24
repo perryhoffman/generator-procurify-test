@@ -55,13 +55,13 @@ describe('<%= angularmodule %> Unit Test', function () {
     <% } %>
 
     describe('Controllers', function () {
+        beforeEach(function() {
+            createController('<%= controller %>');
+        });
 
         describe('<%= controller %>', function () {
             describe('app.doSomething', function() {
                 it('should do something', function() {
-                    // $httpBackend.expectGET(/.*?api\/v2\/user\/1\/?.*/g);
-                    createController('<%= controller %>');
-                    // $httpBackend.flush();
 
                     expect(true).toBe(true);
                 });
