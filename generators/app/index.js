@@ -1,14 +1,15 @@
 'use strict';
+
 var yeoman = require('yeoman-generator');
-var chalk = require('chalk');
-var _ = require('lodash');
+var chalk  = require('chalk');
+var _      = require('lodash');
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
 
     var prompts = [{
         name: 'module',
-        message: 'What procurify ' + chalk.green('module') + ' would you like to test?'
+        message: 'What procurify ' + chalk.green('module') + ' would you like to test (the folder name inside modules directory)?'
     }, {
         name    : 'angularmodule',
         message : 'What is the name of the angular module?',
@@ -19,7 +20,7 @@ module.exports = yeoman.Base.extend({
         default : 'YourAngularAppCtrl'
     }, {
         name    : 'routing',
-        message : 'Will you be testing routes?',
+        message : 'Will you be testing any routes in your app?',
         type    : 'confirm',
         default : false
     }, {
@@ -35,7 +36,6 @@ module.exports = yeoman.Base.extend({
     }];
 
     return this.prompt(prompts).then(function (props) {
-      // To access props later use this.props.someAnswer;
 
       this.props = props;
       if(this.props.module) {
