@@ -6,6 +6,6 @@ module.exports = [
     // eg 'modules/your_dependency/*.js'
 
     'modules/<%= module %>/*.js',
-    'modules/ap.payment.status/tests/mock/**/*.js',
-    'modules/ap.payment.status/tests/spec/**/*.js'
+    'modules/<%= module %>/tests/mock/**/*.js',
+    'modules/<%= module %>/tests/spec/**/*.js'
 ];
