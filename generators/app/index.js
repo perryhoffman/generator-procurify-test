@@ -39,7 +39,7 @@ module.exports = yeoman.Base.extend({
 
       this.props = props;
       if(this.props.module) {
-          var module_name = this.props.module;
+          var module_name = _.snakeCase(this.props.module);
           this.props.module_uppercase = module_name.toUpperCase();
       }
       this.props.module_base = 'static/modules/';
